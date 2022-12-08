@@ -8,7 +8,8 @@ import java.util.*;
 @Retention(RetentionPolicy.RUNTIME)
 @interface FamilyBudget {
     String userRole() default "GUEST";
-	int budgetLimit() default  0;
+
+    int budgetLimit() default 0;
 }
 
 class FamilyMember {
@@ -43,9 +44,9 @@ public class JavaAnnotationDemo1 {
                         String userRole = family.userRole();
                         int budgetLimit = family.budgetLimit();
                         if (userRole.equals(role)) {
-                            if(spend <= budgetLimit){
+                            if (spend <= budgetLimit) {
                                 method.invoke(FamilyMember.class.newInstance(), budgetLimit, spend);
-                            }else{
+                            } else {
                                 System.out.println("Budget Limit Over");
                             }
                         }

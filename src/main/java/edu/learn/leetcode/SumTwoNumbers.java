@@ -2,7 +2,7 @@ package edu.learn.leetcode;
 
 public class SumTwoNumbers {
     public int[] twoSum(int[] nums, int target) {
-        int indexes[] = new int[2];
+        int[] indexes = new int[2];
 
         if(nums != null && nums.length > 1){
             for(int i = 0 ; i < nums.length; i++){
