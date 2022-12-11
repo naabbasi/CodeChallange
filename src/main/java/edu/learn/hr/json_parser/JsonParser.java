@@ -1,3 +1,5 @@
+package edu.learn.hr.json_parser;
+
 import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
